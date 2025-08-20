@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumic - A sua visão, a nossa luz</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Arial', sans-serif; 
+            line-height: 1.6; 
+            background: linear-gradient(135deg, #ffd700, #ff8c00, #ff6347);
+            min-height: 100vh;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 2rem; 
+            text-align: center;
+        }
+        .hero {
+            background: rgba(255,255,255,0.95);
+            padding: 4rem 2rem;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+        h1 { 
+            font-size: 3rem; 
+            color: #333; 
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #ff6347, #ff8c00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .tagline { 
+            font-size: 1.5rem; 
+            color: #666; 
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        .description {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6347, #ff8c00);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+            margin: 1rem;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255,99,71,0.3);
+        }
+        .contact {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(255,255,255,0.8);
+            border-radius: 10px;
+        }
+        .contact h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .contact p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .service-card {
+            background: rgba(255,255,255,0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .service-card h3 {
+            color: #ff6347;
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .tagline { font-size: 1.2rem; }
+            .container { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Lumic</h1>
+            <p class="tagline">A sua visão, a nossa luz</p>
+            <p class="description">
+                Especialistas em produtos digitais inovadores, baseados em Porto. 
+                Transformamos ideias em soluções digitais que realmente funcionam.
+            </p>
+            <a href="mailto:lumiccorp@gmail.com" class="cta-button">Falar Connosco</a>
+            <a href="#servicos" class="cta-button">Ver Serviços</a>
+        </div>
+
+        <div class="services" id="servicos">
+            <div class="service-card">
+                <h3>🤖 Aplicativos Inteligentes</h3>
+                <p>Desenvolvimento de aplicações digitais inovadoras com IA integrada. Soluções personalizadas que automatizam processos.</p>
+                <p><strong>A partir de €1.200</strong></p>
+            </div>
+            <div class="service-card">
+                <h3>🏗️ Plataformas Digitais</h3>
+                <p>Criação de ecossistemas digitais completos para seu negócio. Arquitetura escalável e segura.</p>
+                <p><strong>A partir de €2.000</strong></p>
+            </div>
+            <div class="service-card">
+                <h3>💡 Consultoria Digital</h3>
+                <p>Consultoria especializada em transformação digital e inovação. Estratégia tecnológica personalizada.</p>
+                <p><strong>€150/hora</strong></p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Contactos</h2>
+            <p>📧 <strong>Email:</strong> lumiccorp@gmail.com</p>
+            <p>📍 <strong>Localização:</strong> Porto, Portugal</p>
+            <p>🌐 <strong>Em breve:</strong> Mais informações e portfolio</p>
+        </div>
+    </div>
+</body>
+</html>
